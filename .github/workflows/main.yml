@@ -52,7 +52,7 @@ jobs:
         with:
           repository: ChanJ-Lee/deployment #본인에 맞게 수정
           ref: main  # branch
-          token: ${{ secrets.GIH_TOKEN }}
+          token: ${{ secrets.GIT_TOKEN }}
           
       - name: k8s manifest update
         run: |
