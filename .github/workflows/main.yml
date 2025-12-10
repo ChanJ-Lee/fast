@@ -58,7 +58,7 @@ jobs:
         run: |
           sed -i "s@ \
           image: ${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}:.*@ \
-          image: ${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}:${{ env.IMAGE_TAG }}@g" fast-dep.yml
+          image: ${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}:${{ env.IMAGE_TAG }}@g" test-dep.yml
 
       - name: Commit and Push
         run: |
